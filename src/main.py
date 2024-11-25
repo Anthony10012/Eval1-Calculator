@@ -1,16 +1,17 @@
-operand1 = None
+operand1 = float
 operator = None
-operand2 = None
+operand2 = float
 
 def main():
     ask_user_input()
-    result = calculate(operand1, operator, operand2)
-    display_result(operand1, operator, operand2, result)
+    result = calculate(float(), operator,float(operand2))
+    display_result(float(operand1), operator, float(operand2), float(result))
+    ask_user_float_input(float)
 
-def ask_user_input():
-    # Get first operand from the user
+
+def ask_user_float_input():
     global operand1
-    operand1 = float(input("Enter the first operand: "))
+    operand1 = ask_user_float_input("Enter the first operand: ")
 
     global operator
     # Get the operator from the user
@@ -18,7 +19,21 @@ def ask_user_input():
 
     global operand2
     # Get second operand from the user
-    operand2 = float(input("Enter the second operand: "))
+    operand2 = ask_user_float_input("Enter the second operand: ")
+
+
+def ask_user_input():
+    # Get first operand from the user
+    global operand1
+    operand1 = ask_user_float_input("Enter the first operand: ")
+
+    global operator
+    # Get the operator from the user
+    operator = input("Enter an operator (+, -, *, /): ")
+
+    global operand2
+    # Get second operand from the user
+    operand2 = ask_user_float_input("Enter the second operand: ")
 
 def calculate(ope1, oper, ope2):
     # Perform the operation based on the operator
@@ -38,9 +53,20 @@ def calculate(ope1, oper, ope2):
             print("Invalid operator.")
             return
     return res
+ # Fonction puissance
+    def maFonction(n):
+        somme = 1
+        for count in range(int(n)):
+            somme = somme * 2
+        return somme
+
+    # Ce print sert à tester la fonction
+    print(maFonction(3))
+
 
 def display_result(op1, ope, ope2, res):
-    print(str(op1) + " " + ope + " " + str(ope2) + " = " + str(res))
+    print(float(op1) + " " + ope + " " + float(ope2) + " = " + float(res))
+
 
 # Call the main function to run the program
 main()
