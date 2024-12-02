@@ -6,7 +6,7 @@ def main():
     ask_user_input()
     result = calculate(operand1, operator,operand2)
     display_result(operand1, operator,operand2, result)
-    ask_user_float_input(float)
+    ask_user_float_input()
 
 def ask_user_float_input(prompt):
     while True:
