@@ -6,16 +6,16 @@ class MathRequest:
         self.ope2 = ope2
 
     def get_ope1(self):
-        raise NotImplementedError
+        return self.ope1
 
     def get_oper(self):
-        raise NotImplementedError
+        return self.oper
 
     def get_ope2(self):
-        raise NotImplementedError
+        return self.ope2
 
     def get_res(self):
-        raise NotImplementedError
+        return self.ope1 + self.oper + self.ope2
 
     def set_res(self, value):
         raise NotImplementedError

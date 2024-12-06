@@ -1,8 +1,11 @@
 from src.MathRequest import MathRequest
 
-class Mathlib(MathRequest):
+class Mathlib():
 
-    def __init__(self):
+    def calculate(MathRequest):
+        ope1= mathRequest.get_ope1()
+        oper= mathRequest.get_oper()
+        ope2= mathRequest.get_ope2()
         match oper:
             case '+':
                 res = ope1 + ope2
