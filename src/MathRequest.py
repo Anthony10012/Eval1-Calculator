@@ -14,5 +14,11 @@ class MathRequest:
     def get_ope2(self):
         return self.ope2
 
+    def get_res(self):
+        raise NotImplementedError
 
+    def set_res(self, value):
+        raise NotImplementedError
 
+    def to_string(self):
+        raise NotImplementedError
