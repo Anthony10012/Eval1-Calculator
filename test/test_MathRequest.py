@@ -8,7 +8,7 @@ class TestMathRequest(unittest.TestCase):
     def setUp(self):
         self.ope1 = 3
         self.oper = '+'
-        self.ope2 = 5
+        self.ope2 = 4
         self.mathRequest = MathRequest(self.ope1, self.oper, self.ope2)
 
     def test_get_ope1(self):
