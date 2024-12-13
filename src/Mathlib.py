@@ -17,6 +17,7 @@ class Mathlib:
             case 'div':
                 mathRequest.set_res(mathRequest.get_ope1() / mathRequest.get_ope2())
 
-
+            case 'mul':
+                mathRequest.set_res(mathRequest.get_ope1() * mathRequest.get_ope2())
 
 
