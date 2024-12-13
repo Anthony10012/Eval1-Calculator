@@ -20,4 +20,6 @@ class Mathlib:
             case 'mul':
                 mathRequest.set_res(mathRequest.get_ope1() * mathRequest.get_ope2())
 
+            case 'pow':
+                mathRequest.set_res(mathRequest.get_ope1() ** mathRequest.get_ope2())
 
