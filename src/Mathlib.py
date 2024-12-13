@@ -11,7 +11,8 @@ class Mathlib:
             case 'add':
                 mathRequest.set_res(mathRequest.get_ope1() + mathRequest.get_ope2())
 
-
+            case 'sub':
+                mathRequest.set_res(mathRequest.get_ope1() - mathRequest.get_ope2())
 
 
 
