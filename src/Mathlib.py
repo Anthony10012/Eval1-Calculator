@@ -23,3 +23,6 @@ class Mathlib:
             case 'pow':
                 mathRequest.set_res(mathRequest.get_ope1() ** mathRequest.get_ope2())
 
+            case 'root':
+                mathRequest.set_res(round(mathRequest.get_ope1() ** (1/mathRequest.get_ope2()),2))
+
