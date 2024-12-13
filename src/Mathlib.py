@@ -14,7 +14,8 @@ class Mathlib:
             case 'sub':
                 mathRequest.set_res(mathRequest.get_ope1() - mathRequest.get_ope2())
 
-
+            case 'div':
+                mathRequest.set_res(mathRequest.get_ope1() / mathRequest.get_ope2())
 
 
 
