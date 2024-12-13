@@ -1,9 +1,6 @@
-operand1 = None
-operator = None
-operand2 = None
-
+from src.MathRequest import MathRequest
 def main():
-    ask_user_input()
+    math_Request= ask_user_input()
     result = calculate(operand1, operator,operand2)
     display_result(operand1, operator,operand2, result)
     ask_user_float_input()
